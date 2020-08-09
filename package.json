@@ -7,10 +7,17 @@
   },
   "dependencies": {
     "border.css": "^0.10.0",
+    "lodash-es": "^4.17.15",
     "normalize.css": "^8.0.1",
+    "qs": "^6.9.4",
+    "querystring": "^0.2.0",
+    "url-join": "^4.0.1",
     "vue": "^3.0.0-rc.1"
   },
   "devDependencies": {
+    "@types/lodash-es": "^4.17.3",
+    "@types/qs": "^6.9.4",
+    "@types/url-join": "^4.0.0",
     "@vue/compiler-sfc": "^3.0.0-rc.1",
     "sass": "^1.26.10",
     "vite": "^1.0.0-rc.1"

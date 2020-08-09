@@ -1,7 +1,11 @@
 <template>
 	<div class="todo-list-container">
 		<TaskInput :inputVal="state.inputVal" :onInputTask="onInputTask" :onAddTask="onAddTask" />
-		<TaskList v-if="state.todoList.length" :todoList="state.todoList" :onRemoveTask="onRemoveTask" />
+		<TaskList
+			v-if="state.todoList.length"
+			:todoList="state.todoList"
+			:onRemoveTask="onRemoveTask"
+		/>
 		<Nothing v-else />
 	</div>
 </template>
@@ -11,6 +15,7 @@ import { reactive } from 'vue'
 import TaskInput from './TaskInput.vue'
 import TaskList from './TaskList.vue'
 import Nothing from './Nothing.vue'
+import request, { get, post } from '../../utils/request.ts'
 
 export default {
 	name: 'TodoList',
