@@ -1,3 +1,5 @@
+import path from 'path'
+
 module.exports = {
 	proxy: {
 		// string shorthand
@@ -8,5 +10,6 @@ module.exports = {
 			changeOrigin: true,
 			rewrite: path => path.replace(/^\/api/, '')
 		}
-	}
+	},
+	alias: {}
 }

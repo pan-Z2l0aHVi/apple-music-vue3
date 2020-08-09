@@ -1,15 +1,25 @@
 <template>
-	<img alt="Vue logo" src="./assets/logo.png" />
-	<HelloWorld msg="Hello Vue 3.0 + Vite" />
+	<!-- <HelloWorld msg="Hello Vue 3.0 + Vite" /> -->
+	<TodoList />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import TodoList from './components/TodoList/index.vue'
 
 export default {
 	name: 'App',
 	components: {
-		HelloWorld
+		TodoList
+	},
+	setup() {
+		const testProps = a => {
+			console.log(a)
+		}
+
+		return {
+			testProps
+		}
 	}
 }
 </script>

@@ -2012,11 +2012,6 @@ vite@^1.0.0-rc.1:
     vue "^3.0.0-rc.5"
     ws "^7.2.3"
 
-vue-router@^3.4.2:
-  version "3.4.2"
-  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-3.4.2.tgz?cache=0&sync_timestamp=1596792145954&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-3.4.2.tgz#541221d7ac467786c1c9381bcf36019d883b9cf8"
-  integrity sha1-VBIh16xGd4bByTgbzzYBnYg7nPg=
-
 vue@^3.0.0-rc.1, vue@^3.0.0-rc.5:
   version "3.0.0-rc.5"
   resolved "https://registry.npm.taobao.org/vue/download/vue-3.0.0-rc.5.tgz?cache=0&sync_timestamp=1595983928648&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-3.0.0-rc.5.tgz#973175d45a892b3bd23ef5de7faa4add9c66275f"
