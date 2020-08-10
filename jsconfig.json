@@ -1,0 +1,19 @@
+{
+  "include": [
+    "./src/**/*",
+    "public/assets/font"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "/@/*": [
+        "./src/*"
+      ]
+    },
+  }
+}

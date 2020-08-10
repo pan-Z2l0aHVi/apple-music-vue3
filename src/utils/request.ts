@@ -1,7 +1,7 @@
 import _ from 'lodash-es'
 import qs from 'qs'
-import urljoin from 'url-join'
-import * as config from '../common/config'
+import urlJoin from 'url-join'
+import config from '/@/config/index'
 
 interface IOptions {
 	baseUrl?: string
@@ -85,9 +85,9 @@ class Fetch {
 
 	private getFetchUrl(path: string, params: object) {
 		const querystring = qs.stringify(params)
-		let preffix = this.options.baseUrl
+		let prefix = this.options.baseUrl
 		let suffix = (querystring ? (path.match(/\?/) ? '&' : '?') : '') + querystring
-		return decodeURI(urljoin(preffix, path, suffix))
+		return decodeURI(urlJoin(prefix, path, suffix))
 	}
 
 	private getFetchOpts(reqOpts: IRequestOpts) {
@@ -108,7 +108,7 @@ class Fetch {
 	}
 }
 
-const _failTemp = (code: number) => `code: ${code}: request fail!`
+const _failTemp = (code: number) => `status code: ${code}: request fail!`
 
 const instance = new Fetch({
 	baseUrl: config.BASE_URL,
