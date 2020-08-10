@@ -2,10 +2,10 @@
 	"name": "learn-vue-next",
 	"version": "0.0.0",
 	"scripts": {
-		"dev": "VITE_PROXY_ENV=dev vite",
-		"prod": "VITE_PROXY_ENV=prod vite ",
 		"build:dev": "VITE_PROXY_ENV=dev vite build",
-		"build:prod": "VITE_PROXY_ENV=prod vite build"
+		"build:prod": "VITE_PROXY_ENV=prod vite build",
+		"dev": "VITE_PROXY_ENV=dev vite",
+		"prod": "VITE_PROXY_ENV=prod vite "
 	},
 	"dependencies": {
 		"border.css": "^0.10.0",
@@ -14,7 +14,9 @@
 		"qs": "^6.9.4",
 		"querystring": "^0.2.0",
 		"url-join": "^4.0.1",
-		"vue": "^3.0.0-rc.1"
+		"vue": "^3.0.0-rc.1",
+		"vue-router": "^4.0.0-alpha.6",
+		"vuex": "^4.0.0-alpha.1"
 	},
 	"devDependencies": {
 		"@types/lodash-es": "^4.17.3",
@@ -25,7 +27,8 @@
 		"prettier": "^2.0.5",
 		"pretty-quick": "^2.0.1",
 		"sass": "^1.26.10",
-		"vite": "^1.0.0-rc.1"
+		"vite": "^1.0.0-rc.1",
+		"vue-cli-plugin-vue-next": "~0.1.3"
 	},
 	"husky": {
 		"hooks": {

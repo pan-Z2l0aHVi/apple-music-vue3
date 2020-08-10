@@ -3,7 +3,9 @@ import path from 'path'
 const getAliasPath = dir => path.resolve(__dirname, dir)
 
 module.exports = {
-	base: './', // fix index.html files base import path
+	// fix index.html files base import path
+	base: './',
+	// vite's alias must named prefix and suffix '/', otherwise it will be spliced '@/modules'
 	alias: {
 		'/@/': getAliasPath('./src')
 	},
