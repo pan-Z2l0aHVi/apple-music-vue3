@@ -1,6 +1,6 @@
 <template>
 	<div class="libary-page">
-		<div class="footer-bar"></div>
+		<footer class="footer-bar"></footer>
 	</div>
 </template>
 
