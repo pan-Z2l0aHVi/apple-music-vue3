@@ -1,7 +1,11 @@
 <template>
 	<div class="todo-list-container">
 		<TaskInput :inputVal="state.inputVal" :onInputTask="onInputTask" :onAddTask="onAddTask" />
-		<TaskList v-if="state.todoList.length" :todoList="state.todoList" :onRemoveTask="onRemoveTask" />
+		<TaskList
+			v-if="state.todoList.length"
+			:todoList="state.todoList"
+			:onRemoveTask="onRemoveTask"
+		/>
 		<Nothing v-else />
 	</div>
 </template>
