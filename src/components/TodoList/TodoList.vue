@@ -1,5 +1,5 @@
 <template>
-	<div class="todo-list-container">
+	<article class="todo-list-container">
 		<TaskInput :inputVal="state.inputVal" :onInputTask="onInputTask" :onAddTask="onAddTask" />
 		<TaskList
 			v-if="state.todoList.length"
@@ -7,15 +7,14 @@
 			:onRemoveTask="onRemoveTask"
 		/>
 		<Nothing v-else />
-	</div>
+	</article>
 </template>
 
 <script>
-import { reactive } from 'vue'
+import { reactive, watchEffect } from 'vue'
 import TaskInput from './TaskInput.vue'
 import TaskList from './TaskList.vue'
 import Nothing from './Nothing.vue'
-import request, { get, post } from '/@/utils/request.ts'
 
 export default {
 	name: 'TodoList',
@@ -47,6 +46,10 @@ export default {
 			state.todoList = state.todoList.filter(task => task.id !== id)
 		}
 
+		watchEffect(async () => {
+			console.log('inputVal', state.inputVal)
+		})
+
 		return {
 			state,
 			onInputTask,
@@ -60,7 +63,7 @@ export default {
 <style lang="scss" scoped>
 .todo-list-container {
 	box-sizing: border-box;
-	width: 100%;
 	padding: 16px;
+	width: 100%;
 }
 </style>

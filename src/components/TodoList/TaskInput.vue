@@ -22,15 +22,15 @@ export default {
 <style lang="scss" scoped>
 .todo-input {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	justify-content: space-between;
 	margin-bottom: 16px;
+	width: 100%;
 
 	> input {
+		padding: 0 8px;
 		width: calc(100% - 88px);
 		height: 32px;
-		padding: 0 8px;
 	}
 
 	> button {

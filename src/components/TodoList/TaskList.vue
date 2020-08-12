@@ -17,20 +17,20 @@ export default {
 
 <style lang="scss" scoped>
 .task-list {
-	width: 100%;
+	margin: 0;
 	padding: 0;
+	width: 100%;
 	border: 1px solid #ddd;
 	border-radius: 2px;
-	margin: 0;
 
 	> .task-item {
 		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 0 8px;
 		width: inherit;
 		height: 40px;
-		padding: 0 8px;
 		border-bottom: 1px solid #ddd;
 
 		&:last-child {
@@ -41,10 +41,6 @@ export default {
 			position: absolute;
 			right: 16px;
 			cursor: pointer;
-
-			&:hover {
-				color: red;
-			}
 		}
 	}
 }
