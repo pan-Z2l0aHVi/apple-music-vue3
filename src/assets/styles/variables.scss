@@ -1,0 +1,20 @@
+$theme: (
+	highlight: #fa233b
+);
+
+$colors: (
+	light: (
+		background: #fff,
+		backgroundVariant: #f8f8f8,
+		textPrimary: #000000f2,
+		textSecondary: #3c3c4399,
+		divider: rgba(#000, 0.1),
+		dividerVariant: rgba(#000, 0.14)
+	)
+);
+
+$zIndex: (
+	header: 111,
+	footer: 222,
+	modal: 333
+);

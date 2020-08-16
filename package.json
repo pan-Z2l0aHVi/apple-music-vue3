@@ -10,10 +10,11 @@
 	"dependencies": {
 		"border.css": "^0.10.0",
 		"clsx": "^1.1.1",
+		"dayjs": "^1.8.33",
 		"lodash-es": "^4.17.15",
-		"normalize.css": "^8.0.1",
 		"qs": "^6.9.4",
 		"querystring": "^0.2.0",
+		"reset.css": "^2.0.2",
 		"url-join": "^4.0.1",
 		"vue": "^3.0.0-rc.1",
 		"vue-router": "^4.0.0-alpha.6",

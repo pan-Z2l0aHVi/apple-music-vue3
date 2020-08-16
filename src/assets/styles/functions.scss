@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+@function getTheme($key) {
+	@return map-get($theme, $key);
+}
+
+@function getColor($style, $key) {
+	@return map-get(map-get($colors, $style), $key);
+}
+
+@function getZIndex($key) {
+	@return map-get($zIndex, $key);
+}

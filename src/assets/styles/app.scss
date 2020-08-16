@@ -1,0 +1,20 @@
+@use 'responsive';
+@use 'link';
+@import 'reset.css';
+@import 'border.css';
+
+#app {
+	box-sizing: border-box;
+	color: #000000f2;
+	text-align: center;
+	font-family: SF Pro Text, SF Pro Icons, PingFang SC, Helvetica, Arial, sans-serif;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: inherit;
+	}
+}
