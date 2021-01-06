@@ -1,8 +1,18 @@
-import Vuex from 'vuex'
+import { createStore, createLogger } from 'vuex'
+import user from './user'
+import media from './media'
 
-export default Vuex.createStore({
-	state: {},
-	mutations: {},
-	actions: {},
-	modules: {}
+const store = createStore({
+	state() {
+		return {
+			count: 1
+		}
+	},
+	modules: {
+		user,
+		media
+	},
+	plugins: [createLogger()]
 })
+
+export default store

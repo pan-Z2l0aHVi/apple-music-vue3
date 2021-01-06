@@ -1,1 +1,3 @@
-export * as userApi from './user'
+export * as userApi from './userApi'
+
+export * as musicApi from './musicApi'

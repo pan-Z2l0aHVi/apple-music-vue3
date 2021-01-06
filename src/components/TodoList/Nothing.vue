@@ -9,11 +9,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use 'src/assets/styles/mixins' as *;
 .empty-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: inherit;
 	height: 160px;
+
+	@include flexCenter;
 }
 </style>
